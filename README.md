@@ -1,9 +1,3 @@
-# aplicacion web con oracle
+# Aplicación web que conecta con base de datos ORACLE 
 
-La aplicación simplemente lista las tablas que tengo en mi base de datos. No tiene login, se conecta automáticamente mediante las variables de entorno a mi servidor oracle. adjunto captura con la pantalla de inicio
-
-![captura1](/img/captura1.png)
-
-Como podemos ver en la base de datos, los nombres de las tablas son los siguientes:
-
-![captura1](/img/captura2.png)
+La app se conecta con una base de datos en Oracle utilzando unas variables de entorno y el módulo que conecta python con Oracle. De forma que sirve una app web que muestra las tablas de la base de datos.

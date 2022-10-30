@@ -43,6 +43,17 @@ def inicio():
     res = cursor.fetchall()
     return render_template("inicio.html",tablas=[res])
 
+#mostrar registro
+#@app.route('/tabla/<str:nombre>', methods=["GET","POST"])
+#def verregistro(nombre):
+#        connection = pool.acquire()
+#        cursor = connection.cursor()
+#        select_p = "SELECT * FROM %s"
+#        dato = (int(nombre))
+#        cursor.execute(select_p,dato)
+#        for tabla in res:
+#                if tabla == int(nombre):
+#
 
 # Intento de login, no funciona
 
