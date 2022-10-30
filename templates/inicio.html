@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Pagina Principal{% endblock %}
+{% block contenido %}
+<div class="inner">
+    <h1>Alejandro Montes Delgado</h1><span><br/>
+    Esto es una prueba para base de datos<br>
+
+    {% if tablas %}
+    	<div class="inner">
+    		<header>
+    			<h2>LISTA DE TABLAS</h2>
+    		</header>
+    		<div class="inner" id="formulario">
+    			<section>
+                    <h3>TABLAS</h3>
+                    <table>
+                        <tr>
+                            <td>Nombres de las tablas</td>
+                        </tr>
+    					{% for elem in tablas -%}
+                            {% for i in elem -%}
+                             <tr>
+                                 <td><strong>{{i[0]}}</strong></td>
+                                 <td><u><a href="/tabla/{{i[0]}}">registros</a></u></td>
+                             </tr>
+                            {% endfor -%}
+    					{% endfor -%}
+                    </table>
+    			</section>
+    		</div>
+    	</div>
+    {% endif %}
+{% endblock %}
