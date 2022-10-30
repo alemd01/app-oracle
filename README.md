@@ -5,3 +5,5 @@ La aplicación simplemente lista las tablas que tengo en mi base de datos. No ti
 ![captura1](/img/captura1.png)
 
 Como podemos ver en la base de datos, los nombres de las tablas son los siguientes:
+
+![captura1](/img/captura2.png)
